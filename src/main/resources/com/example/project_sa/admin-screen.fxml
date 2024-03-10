@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: FFF3B0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_sa.AdminScreen">
+   <children>
+      <TableView fx:id="userTable" layoutX="20.0" layoutY="68.0" prefHeight="338.0" prefWidth="760.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="58.4000244140625" text="Id" />
+          <TableColumn fx:id="first_name" prefWidth="136.79998779296875" text="First Name" />
+            <TableColumn fx:id="last_name" prefWidth="102.39996337890625" text="Last Name" />
+            <TableColumn fx:id="username" prefWidth="129.5999755859375" text="Username" />
+            <TableColumn fx:id="email" prefWidth="202.39996337890625" text="E-mail" />
+            <TableColumn fx:id="password" prefWidth="132.800048828125" text="Password" />
+        </columns>
+      </TableView>
+      <Button layoutX="97.0" layoutY="425.0" mnemonicParsing="false" onAction="#handleDelete" style="-fx-background-color: FAB0E4;" text="Delete User">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="359.0" layoutY="425.0" mnemonicParsing="false" onAction="#handleAdd" style="-fx-background-color: FAB0E4;" text="Add User">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="586.0" layoutY="425.0" mnemonicParsing="false" onAction="#handleExit" style="-fx-background-color: FAB0E4;" text="Exit">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="OrderBy" layoutX="22.0" layoutY="27.0" prefWidth="150.0" />
+      <TextField fx:id="searchField" layoutX="565.0" layoutY="27.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_sa.LoginScreen">
+   <children>
+      <ImageView fitHeight="518.0" fitWidth="800.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+       <image>
+            <Image url="@background.jpg" />
+       </image>
+      </ImageView>
+      <TextField fx:id="EmailField" layoutX="400.0" layoutY="162.0" prefHeight="26.0" prefWidth="198.0" style="-fx-border-color: B49100;" />
+      <PasswordField fx:id="PAsswordField" layoutX="400.0" layoutY="245.0" prefHeight="26.0" prefWidth="198.0" style="-fx-border-color: B49100;" />
+      <Label layoutX="221.0" layoutY="161.0" text="E-mail" textFill="WHITE">
+         <font>
+            <Font name="Cooper Black" size="25.0" />
+         </font></Label>
+      <Label layoutX="221.0" layoutY="244.0" text="Password" textFill="WHITE">
+         <font>
+            <Font name="Cooper Black" size="25.0" />
+         </font></Label>
+      <Button layoutX="323.0" layoutY="331.0" mnemonicParsing="false" onAction="#LogIn" prefHeight="74.0" prefWidth="154.0" style="-fx-background-color: EEDF42; -fx-border-color: B49100;" text="LOG IN" textFill="RED">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="68.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@this_is_fine_dog_by_markhoofman_dbkzt72-fullview.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#showAdminScreen" text="Admin">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
+      <Button layoutX="352.0" layoutY="459.0" mnemonicParsing="false" onAction="#createAccount" style="-fx-background-color: EEDF42; -fx-border-color: B49100;" text="Create account" textFill="#f20606" />
+      <CheckBox fx:id="rememberMeCheckBox" layoutX="348.0" layoutY="426.0" mnemonicParsing="false" text="Remember me">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font>
+      </CheckBox>
+   </children>
+</AnchorPane>

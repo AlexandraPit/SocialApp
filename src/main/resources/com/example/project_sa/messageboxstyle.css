@@ -1,0 +1,124 @@
+/*!* MessageBoxStyle.css *!*/
+
+/*.message-box {*/
+/*    -fx-background-color: #e0f7fa;*/
+/*    -fx-border-color: #4caf50;*/
+/*    -fx-border-radius: 15;*/
+/*    -fx-padding: 10;*/
+/*    -fx-background-radius: 15;*/
+/*    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);*/
+/*}*/
+
+/*.message-text {*/
+/*    -fx-text-fill: #37474f; !* Dark text color *!*/
+/*    -fx-font-size: 16px; !* Font size *!*/
+/*    -fx-font-weight: bold; !* Font weight *!*/
+/*}*/
+/*.button-box{*/
+/*    -fx-background-color: #e8a9b3; !* Pink color *!*/
+/*    -fx-text-fill: #FFFFFF; !* White text color *!*/
+/*    -fx-font-family: "Candara Light";*/
+/*    -fx-font-weight: 900;*/
+/*    -fx-font-size: 14px;*/
+/*    -fx-padding: 8px 16px; !* Adjust padding as needed *!*/
+/*    -fx-background-radius: 4px; !* Rounded corners *!*/
+/*    -fx-border-radius: 4px; !* Rounded corners *!*/
+/*    -fx-border-color: #e8a9b3; !* Border color *!*/
+/*    -fx-border-width: 2px; !* Border width *!*/
+/*    -fx-cursor: hand; !* Hand cursor on hover *!*/
+/*}*/
+/*.container{*/
+/*    -fx-background-color: #ffebed; ;*/
+/*}*/
+/*.list-view {*/
+/*    -fx-background-color: #f4ffeb; !* Background color *!*/
+/*    -fx-border-color: #f2ffe6;*/
+/*    -fx-font-family: "Candara Light";*/
+/*    -fx-font-size: 14px;*/
+/*    -fx-text-fill: #333333; !* Text color *!*/
+/*}*/
+
+/*.table-view {*/
+/*    -fx-table-header-border-color: derive(-fx-box-border, -10%);*/
+/*}*/
+
+/*!* Style the column header area *!*/
+/*.table-view .column-header-background {*/
+/*    -fx-background-color: #f2ffe6; !* Header background color *!*/
+/*}*/
+
+/*!* Style the text in the column header *!*/
+/*.table-view .column-header {*/
+/*    -fx-text-fill: #f4ffeb; !* Header text color *!*/
+/*    -fx-font-size: 14px; !* Header text size *!*/
+/*}*/
+/* MessageBoxStyle.css */
+
+.message-box {
+    -fx-background-color: #e0f7fa;
+    -fx-border-color: #4caf50;
+    -fx-border-radius: 15;
+    -fx-padding: 10;
+    -fx-background-radius: 15;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+
+.message-text {
+    -fx-text-fill: #37474f; /* Dark text color */
+    -fx-font-size: 16px; /* Font size */
+    -fx-font-weight: bold; /* Font weight */
+}
+
+.button-box {
+    -fx-background-color: #e8a9b3; /* Pink color */
+    -fx-text-fill: #FFFFFF; /* White text color */
+    -fx-font-family: "Candara Light";
+    -fx-font-weight: 900;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px; /* Adjust padding as needed */
+    -fx-background-radius: 4px; /* Rounded corners */
+    -fx-border-radius: 4px; /* Rounded corners */
+    -fx-border-color: #e8a9b3; /* Border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-cursor: hand; /* Hand cursor on hover */
+}
+
+.container {
+    -fx-background-color: #ffebed;
+}
+
+.list-view {
+    -fx-background-color: #f4ffeb; /* Background color */
+    -fx-border-color: #f2ffe6;
+    -fx-font-family: "Candara Light";
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333; /* Text color */
+}
+
+.list-cell {
+    -fx-background-color: transparent; /* Transparent background for list cells */
+}
+
+.list-cell:selected {
+    -fx-background-color: derive(-fx-control-inner-background, -20%); /* Slightly darker color when selected */
+}
+
+
+/* Style the scroll bar */
+.scroll-bar:horizontal {
+    -fx-background-color: #f2ffe6; /* Horizontal scroll bar background color */
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: #f2ffe6; /* Vertical scroll bar background color */
+}
+
+/* Style the thumb of the scroll bar */
+.scroll-bar .thumb {
+    -fx-background-color: #4caf50; /* Thumb color */
+}
+
+/* Style the track of the scroll bar */
+.scroll-bar .track {
+    -fx-background-color: #e0f7fa; /* Track color */
+}
